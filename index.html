@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dulce Encanto | Repostería Artesanal</title>
+
+    <meta name="description"
+          content="Pasteles, tortas, postres y dulces artesanales preparados con amor. Realiza tu pedido directamente por WhatsApp.">
+
+    <meta name="theme-color" content="#8e3b5d">
+
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+    <div class="container">
+
+        <a class="navbar-brand fw-bold d-flex align-items-center" href="#inicio">
+            <span class="brand-icon">
+                <i class="bi bi-cake2-fill"></i>
+            </span>
+            Dulce Encanto
+        </a>
+
+        <button class="navbar-toggler border-0"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menuPrincipal">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menuPrincipal">
+
+            <ul class="navbar-nav ms-auto align-items-lg-center">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#inicio">Inicio</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#productos">Productos</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#nosotros">Nosotros</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#contacto">Contacto</a>
+                </li>
+
+                <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+                    <button class="btn btn-cart"
+                            data-bs-toggle="offcanvas"
+                            data-bs-target="#carritoCanvas">
+
+                        <i class="bi bi-cart3"></i>
+
+                        <span>Mi pedido</span>
+
+                        <span id="contadorCarrito"
+                              class="cart-counter">
+                            0
+                        </span>
+                    </button>
+                </li>
+
+            </ul>
+
+        </div>
+    </div>
+</nav>
+
+
+<!-- HERO -->
+<header id="inicio" class="hero-section">
+
+    <div class="container">
+        <div class="row align-items-center min-vh-100">
+
+            <div class="col-lg-6 hero-content">
+
+                <span class="hero-badge">
+                    <i class="bi bi-heart-fill"></i>
+                    Hecho con amor
+                </span>
+
+                <h1>
+                    Pequeños momentos,
+                    <span>grandes sabores.</span>
+                </h1>
+
+                <p class="hero-text">
+                    Descubre nuestros pasteles, tortas y dulces artesanales
+                    preparados especialmente para endulzar tus momentos.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#productos"
+                       class="btn btn-primary-custom">
+                        Ver productos
+                        <i class="bi bi-arrow-down ms-2"></i>
+                    </a>
+
+                    <a href="#contacto"
+                       class="btn btn-outline-custom">
+                        Contáctanos
+                    </a>
+
+                </div>
+
+                <div class="hero-features">
+
+                    <div>
+                        <i class="bi bi-check-circle-fill"></i>
+                        Ingredientes seleccionados
+                    </div>
+
+                    <div>
+                        <i class="bi bi-check-circle-fill"></i>
+                        Preparación artesanal
+                    </div>
+
+                    <div>
+                        <i class="bi bi-check-circle-fill"></i>
+                        Pedidos por WhatsApp
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-6 d-none d-lg-block">
+
+                <div class="hero-image-wrapper">
+
+                    <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=1000&q=90"
+                         class="hero-image"
+                         alt="Pastel artesanal">
+
+                    <div class="floating-card floating-card-one">
+                        <i class="bi bi-star-fill"></i>
+                        <div>
+                            <strong>100%</strong>
+                            <small>Artesanal</small>
+                        </div>
+                    </div>
+
+                    <div class="floating-card floating-card-two">
+                        <i class="bi bi-heart-fill"></i>
+                        <div>
+                            <strong>+500</strong>
+                            <small>Clientes felices</small>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+</header>
+
+
+<!-- CATEGORIAS -->
+<section class="categories-section">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <span class="section-label">
+                NUESTRO CATÁLOGO
+            </span>
+
+            <h2 class="section-title">
+                Algo dulce para cada ocasión
+            </h2>
+
+            <p class="section-description">
+                Elige tus favoritos y agrégalos a tu pedido.
+            </p>
+
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-6 col-lg-3">
+                <div class="category-card" data-categoria="Pasteles">
+                    <div class="category-icon">
+                        <i class="bi bi-cake2-fill"></i>
+                    </div>
+                    <h5>Pasteles</h5>
+                    <p>Para celebrar en grande</p>
+                </div>
+            </div>
+
+            <div class="col-6 col-lg-3">
+                <div class="category-card" data-categoria="Tortas">
+                    <div class="category-icon">
+                        <i class="bi bi-box2-heart-fill"></i>
+                    </div>
+                    <h5>Tortas</h5>
+                    <p>Un clásico irresistible</p>
+                </div>
+            </div>
+
+            <div class="col-6 col-lg-3">
+                <div class="category-card" data-categoria="Postres">
+                    <div class="category-icon">
+                        <i class="bi bi-cup-hot-fill"></i>
+                    </div>
+                    <h5>Postres</h5>
+                    <p>Para darte un gustito</p>
+                </div>
+            </div>
+
+            <div class="col-6 col-lg-3">
+                <div class="category-card" data-categoria="Dulces">
+                    <div class="category-icon">
+                        <i class="bi bi-gift-fill"></i>
+                    </div>
+                    <h5>Dulces</h5>
+                    <p>Detalles llenos de sabor</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- PRODUCTOS -->
+<section id="productos" class="products-section">
+
+    <div class="container">
+
+        <div class="text-center mb-4">
+
+            <span class="section-label">
+                NUESTROS PRODUCTOS
+            </span>
+
+            <h2 class="section-title">
+                Elige tus favoritos
+            </h2>
+
+            <p class="section-description">
+                Agrega al carrito los productos que quieras pedir.
+            </p>
+
+        </div>
+
+        <!-- FILTROS -->
+        <div class="category-filters text-center mb-5">
+
+            <button class="filter-btn active"
+                    data-filter="Todos">
+                Todos
+            </button>
+
+            <button class="filter-btn"
+                    data-filter="Pasteles">
+                Pasteles
+            </button>
+
+            <button class="filter-btn"
+                    data-filter="Tortas">
+                Tortas
+            </button>
+
+            <button class="filter-btn"
+                    data-filter="Postres">
+                Postres
+            </button>
+
+            <button class="filter-btn"
+                    data-filter="Dulces">
+                Dulces
+            </button>
+
+        </div>
+
+        <div id="listaProductos" class="row g-4">
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- BENEFICIOS -->
+<section class="benefits-section">
+
+    <div class="container">
+
+        <div class="row g-4">
+
+            <div class="col-md-4">
+
+                <div class="benefit-item">
+
+                    <div class="benefit-icon">
+                        <i class="bi bi-heart-fill"></i>
+                    </div>
+
+                    <h4>Hecho con amor</h4>
+
+                    <p>
+                        Cada producto es preparado cuidadosamente
+                        para ofrecerte una experiencia especial.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-4">
+
+                <div class="benefit-item">
+
+                    <div class="benefit-icon">
+                        <i class="bi bi-stars"></i>
+                    </div>
+
+                    <h4>Calidad garantizada</h4>
+
+                    <p>
+                        Seleccionamos ingredientes de calidad para
+                        conseguir el mejor sabor.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-4">
+
+                <div class="benefit-item">
+
+                    <div class="benefit-icon">
+                        <i class="bi bi-whatsapp"></i>
+                    </div>
+
+                    <h4>Pedido fácil</h4>
+
+                    <p>
+                        Arma tu pedido y envíanoslo directamente
+                        por WhatsApp.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- NOSOTROS -->
+<section id="nosotros" class="about-section">
+
+    <div class="container">
+
+        <div class="row align-items-center g-5">
+
+            <div class="col-lg-6">
+
+                <div class="about-image">
+
+                    <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=1000&q=85"
+                         alt="Repostería artesanal"
+                         loading="lazy">
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-6">
+
+                <span class="section-label">
+                    SOBRE NOSOTROS
+                </span>
+
+                <h2 class="section-title">
+                    El sabor de lo hecho en casa
+                </h2>
+
+                <p>
+                    En Dulce Encanto creemos que los mejores recuerdos
+                    siempre vienen acompañados de algo delicioso.
+                </p>
+
+                <p>
+                    Elaboramos nuestros productos de manera artesanal,
+                    cuidando cada detalle desde la preparación hasta
+                    la presentación.
+                </p>
+
+                <div class="about-list">
+
+                    <div>
+                        <i class="bi bi-check-lg"></i>
+                        Productos frescos
+                    </div>
+
+                    <div>
+                        <i class="bi bi-check-lg"></i>
+                        Elaboración artesanal
+                    </div>
+
+                    <div>
+                        <i class="bi bi-check-lg"></i>
+                        Pedidos personalizados
+                    </div>
+
+                </div>
+
+                <a href="#productos"
+                   class="btn btn-primary-custom mt-3">
+                    Ver productos
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CTA -->
+<section id="contacto" class="cta-section">
+
+    <div class="container">
+
+        <div class="cta-content">
+
+            <span class="cta-icon">
+                <i class="bi bi-chat-heart-fill"></i>
+            </span>
+
+            <h2>
+                ¿Listo para endulzar tu día?
+            </h2>
+
+            <p>
+                Elige tus productos, agrégalos al carrito
+                y envíanos tu pedido por WhatsApp.
+            </p>
+
+            <a href="#productos"
+               class="btn btn-light-custom">
+                Armar mi pedido
+                <i class="bi bi-cart3 ms-2"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="row g-4">
+
+            <div class="col-lg-5">
+
+                <a href="#inicio"
+                   class="footer-brand">
+                    <i class="bi bi-cake2-fill"></i>
+                    Dulce Encanto
+                </a>
+
+                <p>
+                    Repostería artesanal hecha con amor
+                    para tus momentos más especiales.
+                </p>
+
+            </div>
+
+            <div class="col-6 col-lg-3">
+
+                <h5>Enlaces</h5>
+
+                <ul>
+                    <li>
+                        <a href="#inicio">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="#productos">Productos</a>
+                    </li>
+                    <li>
+                        <a href="#nosotros">Nosotros</a>
+                    </li>
+                    <li>
+                        <a href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="col-6 col-lg-4">
+
+                <h5>Contáctanos</h5>
+
+                <ul class="footer-contact">
+
+                    <li>
+                        <i class="bi bi-whatsapp"></i>
+                        WhatsApp
+                    </li>
+
+                    <li>
+                        <i class="bi bi-clock"></i>
+                        Lun - Sáb: 9:00 AM - 7:00 PM
+                    </li>
+
+                    <li>
+                        <i class="bi bi-geo-alt"></i>
+                        Lima, Perú
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div class="footer-bottom">
+            <span>
+                © <span id="anio"></span> Dulce Encanto
+            </span>
+
+            <span>
+                Hecho con <i class="bi bi-heart-fill"></i>
+            </span>
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- BOTÓN WHATSAPP -->
+<a href="#"
+   id="whatsappFlotante"
+   class="whatsapp-floating"
+   target="_blank"
+   aria-label="Contactar por WhatsApp">
+
+    <i class="bi bi-whatsapp"></i>
+
+</a>
+
+
+<!-- CARRITO OFFCANVAS -->
+<div class="offcanvas offcanvas-end cart-canvas"
+     tabindex="-1"
+     id="carritoCanvas">
+
+    <div class="offcanvas-header">
+
+        <div>
+            <span class="cart-small-title">
+                TU PEDIDO
+            </span>
+
+            <h5 class="offcanvas-title">
+                Mi carrito
+            </h5>
+        </div>
+
+        <button type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas">
+        </button>
+
+    </div>
+
+    <div class="offcanvas-body">
+
+        <div id="carritoVacio"
+             class="empty-cart">
+
+            <div class="empty-cart-icon">
+                <i class="bi bi-cart-x"></i>
+            </div>
+
+            <h5>Tu carrito está vacío</h5>
+
+            <p>
+                Agrega algunos productos deliciosos
+                para comenzar tu pedido.
+            </p>
+
+            <button class="btn btn-primary-custom"
+                    data-bs-dismiss="offcanvas"
+                    onclick="document.querySelector('#productos').scrollIntoView({behavior:'smooth'})">
+                Ver productos
+            </button>
+
+        </div>
+
+        <div id="carritoContenido"
+             class="d-none">
+
+            <div id="itemsCarrito"></div>
+
+            <div class="cart-summary">
+
+                <div class="summary-row">
+                    <span>Productos</span>
+                    <strong id="cantidadTotal">0</strong>
+                </div>
+
+                <div class="summary-total">
+                    <span>Total</span>
+                    <strong id="totalCarrito">
+                        S/ 0.00
+                    </strong>
+                </div>
+
+            </div>
+
+            <button id="btnPagar"
+                    class="btn btn-whatsapp w-100">
+
+                <i class="bi bi-whatsapp me-2"></i>
+                Pedir por WhatsApp
+
+            </button>
+
+            <button id="btnVaciar"
+                    class="btn btn-link btn-clear-cart w-100">
+                Vaciar carrito
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- BOOTSTRAP -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- JQUERY -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<!-- APP -->
+<script src="js/app.js"></script>
+
+</body>
+</html>
